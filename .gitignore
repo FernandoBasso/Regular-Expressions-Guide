@@ -1,0 +1,8 @@
+##
+# .gitignore
+##
+
+##
+# Ignore html Asciidoctor generated files.
+#
+**/*.html

@@ -1,0 +1,37 @@
+== Letter Case
+
+=== Manipulation Based on Uppercase Letters
+
+Problem: We want to insert spaces before uppercase letters that are *not* in the beginning or end of strings.
+
+.inputs → outputs
+----
+‘FooBar’      → ‘Foo Bar’
+‘MayTheForce’ → ‘May The Force’
+----
+
+Note there is not space in front of ‘F’ in ‘Foo’ or ‘M’ in ‘May’.
+
+==== JavaScript
+
+We can use the _non word boundary_ delimiter, `\B`.
+Also, since `String.prototype.replace` can take a function for the _replacement_ parameter, it works well for this case.
+
+[source,javascript]
+----
+['May', 'MayThe', 'MayTheForce'].map(str => {
+  return str.replace(/\B[A-Z]\B/g, match => ` ${match}`));
+});
+// → [ 'May', 'May The', 'May The Force' ]
+----
+
+// TODO: In vim, \< matches the beginning of a word boundary, just like `\b` in other languages, grep, etc.
+// How to do something like `\B` in vim to NOT match a word boundary?
+
+// === Matching Uppercase Letters
+
+
+// === Replacing Uppercase Letters
+
+
+

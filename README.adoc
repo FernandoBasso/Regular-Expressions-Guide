@@ -1,0 +1,40 @@
+= Regular Expressions Guide
+:toc: left
+:source-highlighter: pygments
+:pygments-css: class
+:icons: font
+:uri_repo_gitlab: https://gitlab.com/fernandobasso/regular-expressions-guide
+:uri_repo_github: https://github.com/FernandoBasso/Regular-Expressions-Guide
+
+A guide on how to create and use regular expressions – by example 🚀.
+We avoid examples like “match ‘a’ in ‘abc’” 🙄.
+The focus is on real world examples 💪.
+
+[NOTE]
+====
+The link:{uri_repo_gitlab}[main repo is on gitlab], and therefore, suggestions, issues, etc. should happen there.
+The link:{uri_repo_github}[github repo] is only a mirror.
+====
+
+[NOTE]
+====
+Github doesn't do nice rendering of Asciidoctor (`.adoc`) files.
+Gitlab does a much better job at this.
+You are advised to read this text link:{uri_repo_gitlab}[there].
+====
+
+//
+// It is best to use empty lines between these includes.
+//
+// https://docs.asciidoctor.org/asciidoc/latest/directives/include/#include-syntax
+//
+include::./docs/letter-case.adoc[]
+
+++++
+<style type="text/css">
+pre.pygments .tok-c1,
+pre.pygments .tok-cm {
+  font-style: normal;
+}
+</style>
+++++
